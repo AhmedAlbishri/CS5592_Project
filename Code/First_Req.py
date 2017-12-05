@@ -23,7 +23,7 @@ prof_flag = {}
 
 #Initialize all as not teaching
 for p in prof:
-    prof_flag[prof[p]] = bool = False
+    prof_flag[prof[p]] = 0
 
 #Comulitave running weight
 total_wieght = 0.0
@@ -59,13 +59,15 @@ for course in courses:
     res_list = [x[0] for x in best_prof_sorted]
     p = 0
     for best_prof in prof_flag:
-        if prof_flag[res_list[p]]:
+
+        if prof_flag[res_list[p]] == 2:
             p = p + 1
             continue
         else:
             print("Best Prof to teach " + courses[course] + " is:", best_prof_sorted[p], "%\n")
             total_wieght = total_wieght + best_prof_sorted[p][1]
-            prof_flag[res_list[p]] = True
+            prof_flag[res_list[p]] = prof_flag[res_list[p]] + 1
             p = p + 1
             break
+
 print('Total wieght =',total_wieght,' = ', (total_wieght/500)*100,'%')
