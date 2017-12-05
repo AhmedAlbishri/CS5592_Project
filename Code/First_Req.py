@@ -18,7 +18,7 @@ def lookup(dic, key, *keys):
         return lookup(dic.get(key, {}), *keys)
     return dic.get(key)
 
-# Tc check if prof is teaching more than subject
+# To check if prof ateaching more than a subject, 
 prof_flag = {}
 
 #Initialize all as not teaching
