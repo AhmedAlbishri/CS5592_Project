@@ -6,7 +6,7 @@ import  csv
 
 def data_fill():
 
-    # create dict to hold courses, topics, prof,course_match, prof_exp.
+    #create dict to hold courses, topics, prof,course_match, prof_exp.
     courses = {}
     topics = {}
     prof = {}
@@ -58,10 +58,10 @@ def data_fill():
 
                 ############################
 
-    # due to CSV files different structure we need two different loops.
+    #Due to CSV files different structure we need two different loops.
 
-    # We are using two for loops "Nested loops" to fill data into dictionaries, first loop deal with dict from fill_date_2 each time z will be an object from them.
-    # Nested loop here takes care of the file location for each dict from fill_data_1.
+    #We are using two for loops "Nested loops" to fill data into dictionaries, first loop deal with dict from fill_date_2 each time z will be an object from them.
+    #Nested loop here takes care of the file location for each dict from fill_data_1.
 
     j = 0
 
@@ -78,9 +78,9 @@ def data_fill():
                         fill_data_2[z][row[0]][row[1]] = (row[2])
                     else:
                         fill_data_2[z][row[0]][row[1]] = (row[2])
-                # Increase the row number
+                #Increase the row number
                 rowNr = rowNr + 1
         j = j + 1
 
-    # Here we return dictionary type data in a list.
+    #Here we return dictionary type data in a list.
     return [courses,topics,prof,course_topic_match,prof_exp]
