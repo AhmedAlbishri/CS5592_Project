@@ -25,7 +25,7 @@ prof_flag = {}
 for p in prof:
     prof_flag[prof[p]] = 0
 
-#Comulitave running wight
+#Comulitave running weight
 total_wieght = 0.0
 
 #Main Greedy Algo will loop by size of courses
