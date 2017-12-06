@@ -1,6 +1,6 @@
 import  csv
 
-#This class is designed to help prepare the data from CSV format into python Dictionaries.
+#This class is designed to help the (Controller)to prepare the data from CSV format into python Dictionaries.
 #The Function data_fill() returns 5 dict from our 5 CSV files.
 
 
